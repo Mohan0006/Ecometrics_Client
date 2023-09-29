@@ -1,0 +1,12 @@
+.physical-map {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Customize the tooltip appearance */
+.leaflet-tooltip {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 6px 12px;
+}

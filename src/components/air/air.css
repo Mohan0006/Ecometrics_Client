@@ -1,0 +1,58 @@
+.air-container {
+    padding: 15px;
+    margin: 50px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: white;
+}
+
+.pollutant-table {
+    width: 100% !important;
+    height: 100% !important;
+    color: black;
+    border-collapse: collapse;
+}
+
+.pollutant-table th {
+    font-weight: bold;
+    background-color: #f5f5f5;
+}
+
+.pollutant-table td {
+    padding: 8px;
+    text-align: center;
+}
+
+.pollutant-cell {
+    color: white;
+    font-weight: bold;
+    background-color: steelblue;
+}
+
+.even-row {
+    background-color: #f5f5f5;
+}
+
+.odd-row {
+    background-color: white;
+}
+
+/* Assuming your Grid component has a class or id, let's call it 'air-quality-grid' */
+#air-quality-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #air-quality-grid img {
+    width: 50%; 
+    height: 70%; 
+    margin: 20px;
+  }
+
+  

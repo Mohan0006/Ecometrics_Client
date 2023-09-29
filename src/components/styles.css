@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F4F6F7;
+    margin: 0;
+    padding: 0;
+}
+
+.dark-background {
+    background: url('https://i.postimg.cc/2y8wPwX3/7cd57f8b757aea1e128f2f8f6b2c1983.gif') no-repeat;
+    background-size: cover;
+}
+
+.light-background {
+    background-image: url("https://image.geo.de/30138026/t/Kt/v3/w1440/r0/-/lenzen-geo-tag-der-natur-jpg--78476-.jpg");
+    background-size: cover;
+}
+
+#current-weather-dark {
+    padding: 15px;
+    margin-left: 500px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
+    max-width: 450px;
+    min-width: 400px;
+    z-index: 2;
+    color: white;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#current-weather-light {
+    padding: 15px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
+    max-width: 450px;
+    min-width: 400px;
+    z-index: 2;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#current-weather-dark{
+    padding: 15px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
+    max-width: 450px;
+    min-width: 400px;
+    z-index: 2;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+#current-block-light {
+    padding: 15px;
+    margin: 50px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
+    min-height: 500px;
+    z-index: 2;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+#refresh{
+   margin-top: 14px;
+}
+
+.location-refresh{
+    display: flex;
+  justify-content: center; /* Center horizontally */
+}

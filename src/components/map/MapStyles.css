@@ -1,0 +1,14 @@
+#map {
+    width: 95%;
+    height: 750px;
+    margin-left: 40px;
+    border-radius: 20px;
+    border: 2px solid black; /* Add this line for a black border */
+}
+#air-map {
+    width: 95%;
+    height: 750px;
+    margin-left: 40px;
+    border-radius: 20px;
+    border: 2px solid black; /* Add this line for a black border */
+}
