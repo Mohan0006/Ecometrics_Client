@@ -18,6 +18,7 @@ function PhysicalMap() {
 
   return (
     <div className="physical-map">
+      <h2>GlobalWeather Palette</h2>
       <MapContainer
         center={[40, -95]} // Adjust the initial map center (latitude and longitude)
         zoom={4} // Adjust the initial zoom level

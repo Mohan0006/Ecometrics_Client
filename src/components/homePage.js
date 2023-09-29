@@ -29,6 +29,15 @@ function HomePage() {
             <Grid container spacing={3} sx={{ marginTop: 3 }} >
                 {/* Graph Cards */}
                 <Grid item xs={12} md={12}>
+                    <Card sx={{ backgroundColor: cardBgColor }} >
+                        <CardContent>   
+                            <Typography variant="h6" color={textColor}>
+                                <Map/>
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={12} md={12}>
                     <Card sx={{ backgroundColor: cardBgColor }} id="weather-map">
                         <CardContent>
                             <Typography variant="h6" color={textColor}>
@@ -46,15 +55,7 @@ function HomePage() {
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item xs={12} md={12}>
-                    <Card sx={{ backgroundColor: cardBgColor }} >
-                        <CardContent>   
-                            <Typography variant="h6" color={textColor}>
-                                <Map/>
-                            </Typography>
-                        </CardContent>
-                    </Card>
-                </Grid>
+                
             </Grid>
         </Box>
     );
