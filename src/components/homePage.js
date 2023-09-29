@@ -5,34 +5,51 @@ import './homePage.css';
 import WeatherMap from './map/WeatherMap';
 import AirQualityMap from './map/AirQualityMap';
 import Map from './Map';
+import { Link } from 'react-router-dom';
+
 function HomePage() {
     const darkMode = useSelector(state => state.modeReducer.darkMode);  // Replace with your actual state
-    
+
     if (darkMode) {
         document.body.classList.add('dark-background');
         document.body.classList.remove('light-background');
-      } else {
+    } else {
         document.body.classList.add('light-background');
         document.body.classList.remove('dark-background');
-      }
+    }
 
-    const cardBgColor = darkMode ?'rgba(41, 41, 41, 0.3)' : 'rgba(245, 245, 245, 0.8)';
+    const cardBgColor = darkMode ? 'rgba(41, 41, 41, 0.3)' : 'rgba(245, 245, 245, 0.8)';
     const textColor = darkMode ? '#fff' : '#000';
     const boxBgColor = 'transparent'
     return (
         <Box sx={{ marginTop: 1, padding: 3, backgroundColor: boxBgColor }}>
-
-            <Typography variant="h6" color={textColor}>
+            <Typography variant="h6" style={{ color: textColor }}>
                 Ecometrics offers real-time air quality and weather insights for your location. Understand trends, make informed choices, and stay connected to your environment with ease. Breathe better, live smarter with Ecometrics.
-
+                <Link to="/location" style={{ textDecoration: 'none' }}>
+                    <div
+                        style={{
+                            color: textColor,
+                            padding: '5px',
+                            border: `1px solid ${textColor}`,
+                            borderRadius: '5px',
+                            cursor: 'pointer',
+                            display: 'inline-block',
+                            textDecoration: 'none',
+                            marginLeft: '10px',
+                        }}
+                    >
+                        View Weather Updates
+                    </div>
+                </Link>
             </Typography>
+
             <Grid container spacing={3} sx={{ marginTop: 3 }} >
                 {/* Graph Cards */}
                 <Grid item xs={12} md={12}>
                     <Card sx={{ backgroundColor: cardBgColor }} >
-                        <CardContent>   
+                        <CardContent>
                             <Typography variant="h6" color={textColor}>
-                                <Map/>
+                                <Map />
                             </Typography>
                         </CardContent>
                     </Card>
@@ -50,12 +67,12 @@ function HomePage() {
                     <Card sx={{ backgroundColor: cardBgColor }}>
                         <CardContent>
                             <Typography variant="h6" color={textColor}>
-                                <AirQualityMap/>
+                                <AirQualityMap />
                             </Typography>
                         </CardContent>
                     </Card>
                 </Grid>
-                
+
             </Grid>
         </Box>
     );

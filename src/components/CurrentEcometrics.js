@@ -198,9 +198,9 @@ function CurrentEcometrics() {
                 dispatch(setWeatherData(weatherData));
                 getDateTime(weatherData.timestamp);
     
-                if ((weatherData.isDay === false || weatherData.isDay === 0) && darkMode === false) {
-                    dispatch(toggleMode());
-                }
+                // if ((weatherData.isDay === false || weatherData.isDay === 0) && darkMode === false) {
+                //     dispatch(toggleMode());
+                // }
     
                 // Set local date and time
                 const localDateTime = new Date(currentWeather.last_updated);
@@ -208,9 +208,7 @@ function CurrentEcometrics() {
                 setLocalTime(localDateTime.toLocaleTimeString());
                 setCityName(weatherResponse.data.location.name);
                 setCityCode(weatherResponse.data.location.region);
-    
-                console.log(weatherData.temperature);
-    
+
                 const activityBody = {
                     data: [
                         [weatherData.temperature],
@@ -221,12 +219,10 @@ function CurrentEcometrics() {
                     ],
                 };
     
-                console.log(activityBody);
-    
                 const headers = {
                     'Content-Type': 'application/json',
                 };
-    
+                
                 axios
                     .post(activityUrl, activityBody, { headers: headers }) // Pass the URL, body, and headers in the configuration object
                     .then((response) => {

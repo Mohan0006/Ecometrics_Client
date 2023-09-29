@@ -82,7 +82,7 @@ function WeatherMap() {
 
   return (
     <div className="map">
-      <h2>Weather Map: <h6>(Click on any point on the map to get weather updates at that location)</h6></h2>
+      <h2>WeatherSpotter Map: <h6>(Click on any point on the map to get weather updates at that location)</h6></h2>
       <div id="map"></div>
     </div>
   );

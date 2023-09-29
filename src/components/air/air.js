@@ -57,7 +57,7 @@ function Air(data) {
                         <thead>
                             <tr>
                                 <th>Pollutant</th>
-                                <th>Value</th>
+                                <th>Value (Concentration in μg/m3)</th>
                             </tr>
                         </thead>
                         <tbody>

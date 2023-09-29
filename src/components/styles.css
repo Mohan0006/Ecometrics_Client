@@ -27,7 +27,6 @@ body {
 
 #current-weather-dark {
     padding: 15px;
-    margin-left: 500px;
     margin-top: 50px;
     border-radius: 10px;
     border: 2px solid rgba(0, 0, 0, 0.2);
@@ -59,21 +58,6 @@ body {
     font-size: 1.5rem;
 }
 
-#current-weather-dark{
-    padding: 15px;
-    margin-top: 50px;
-    border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    background: rgba(0, 0, 0, 0.4);
-    max-width: 450px;
-    min-width: 400px;
-    z-index: 2;
-    overflow: hidden;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    font-weight: bold;
-    font-size: 1.5rem;
-}
 
 
 #current-block-light {

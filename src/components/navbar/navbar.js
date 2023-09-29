@@ -49,6 +49,8 @@ function Navbar() {
                     aria-label="weather"
                     onClick={handleLocation}
                 >
+                    <Typography variant="h6" sx={{ flexGrow: 1 }}>
+                    </Typography>
                     <LocationOnIcon/>
                 </IconButton>
                 <IconButton

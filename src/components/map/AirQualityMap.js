@@ -38,7 +38,7 @@ function AirQualityMap() {
 
                 try {
                     const response = await axios.get(
-                        `https://ecometrics-server.onrender.com/api/v1/air/?latitude=${latlng.lat}&longitude=${latlng.lng}`
+                        `http://localhost:4000/api/v1/air/?latitude=${latlng.lat}&longitude=${latlng.lng}`
                     );
 
                     const data = response.data;

@@ -133,42 +133,42 @@ function Weather(props) {
     return (
         <div className="weather-container">
             <Grid container>
-                <Grid item xs={12} md={4} sm={4} className="icon">
+                <Grid item xs={12} md={4} sm={12} className="icon">
                     <h2>Weather Condition: {condition}</h2>
                     <img src={getWeatherIcon(code, isDay)} alt="Weather Condition" ></img>
                 </Grid>
-                <Grid item xs={12} md={8} sm={8}>
+                <Grid item xs={12} md={8} sm={12}>
                     <Grid container>
-                        <Grid item xs={6} md={3} sm={3} className="sub-icons">
+                        <Grid item xs={6} md={3} sm={6} className="sub-icons">
                             <h2>Temperature: {temperature}°C</h2>
                             <img src="Icons/thermometer.svg" alt="Weather Condition" ></img>
                         </Grid>
-                        <Grid item xs={6} md={3} sm={3}className="sub-icons" >
-                            <h2>Humidity: {humidity}</h2>
+                        <Grid item xs={6} md={3} sm={6}className="sub-icons" >
+                            <h2>Humidity: {humidity}%</h2>
                             <img src="Icons/humidity.svg" alt="Weather Condition" ></img>
                         </Grid>
-                        <Grid item xs={6} md={3} sm={3} className="sub-icons">
+                        <Grid item xs={6} md={3} sm={6} className="sub-icons">
                             <h2>Feels Like: {feelsLike}°C</h2>
                             <img src="Icons/feels.svg" alt="Weather Condition" ></img>
                         </Grid>
-                        <Grid item xs={6} md={3} sm={3} className="sub-icons">
-                            <h2>Pressure: {pressure}</h2>
+                        <Grid item xs={6} md={3} sm={6} className="sub-icons">
+                            <h2>Pressure: {pressure} mb</h2>
                             <img src="Icons/barometer.svg" alt="Weather Condition" ></img>
                         </Grid>
-                        <Grid item xs={6} md={3} sm={3} className="sub-icons">
-                            <h2>Wind Speed: {windSpeed}</h2>
+                        <Grid item xs={6} md={3} sm={6} className="sub-icons">
+                            <h2>Wind Speed: {windSpeed} kph</h2>
                             <img src="Icons/wind.svg" alt="Weather Condition" ></img>
                         </Grid>
-                        <Grid item xs={6} md={3} sm={3} className="sub-icons">
+                        <Grid item xs={6} md={3} sm={6} className="sub-icons">
                             <h2>Wind Direction: {windDirection}</h2>
                             <img src="Icons/compass.svg" alt="Weather Condition" ></img>
                         </Grid>
-                        <Grid item xs={6} md={3} sm={3} className="sub-icons">
+                        <Grid item xs={6} md={3} sm={6} className="sub-icons">
                             <h2>UV Index: {uvIndex}</h2>
                             <img src="Icons/uv-index.svg" alt="Weather Condition" ></img>
                         </Grid>
-                        <Grid item xs={6} md={3} sm={3} className="sub-icons">
-                            <h2>Precipitation: {precipitation}</h2>
+                        <Grid item xs={6} md={3} sm={6} className="sub-icons">
+                            <h2>Precipitation: {precipitation} mm</h2>
                             <img src="Icons/rain.svg" alt="Weather Condition" ></img>
                         </Grid>
                     </Grid>

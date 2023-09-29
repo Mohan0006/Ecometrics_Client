@@ -19,6 +19,7 @@
 
 .pollutant-table th {
     font-weight: bold;
+    padding: 5px;
     background-color: #f5f5f5;
 }
 
