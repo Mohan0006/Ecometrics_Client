@@ -1,4 +1,4 @@
-# Deployed Web Application : https://dashboard.render.com/static/srv-ckbdo0fs0fgc73f8ao70
+# Deployed Web Application : https://ecometrics-client.onrender.com/
 # Deployed Web App Server : https://ecometrics-server.onrender.com/
 # Deployed Model server : https://dl-model-server.onrender.com/docs
 # Backend : https://github.com/Mohan0006/Ecometrics_Server
